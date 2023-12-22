@@ -1,0 +1,15 @@
+﻿@using EF.Models
+@using System.Collections.Generic
+@model IEnumerable<Auteur>
+
+@{
+	foreach (var auteur in Model)
+	{
+		<p>Id : @auteur.IdAuteur</p>
+		<p>Nom : @auteur.NomAuteur</p>
+		<p>Prenom : @auteur.PrenomAuteur</p>
+		<p>--------------</p>
+
+	}
+
+}

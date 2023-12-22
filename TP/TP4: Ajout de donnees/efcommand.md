@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "Data Source=biblio.db" Microsoft.EntityFrameworkCore.Sqlite --output-dir Models

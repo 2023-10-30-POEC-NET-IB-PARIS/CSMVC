@@ -1,0 +1,18 @@
+@using WebApplication2.Models
+@model Auteur
+
+
+Le prenom de l'auteur est : @Model.Prenom <br />
+
+Le nom de l'auteur est : @Model.Nom <br />
+
+
+La liste des livres de l'auteur est : <br />
+
+<ul>
+
+@foreach (var titre in Model.TitreOeuvres)
+{
+	<li>@titre</li>
+}
+</ul>

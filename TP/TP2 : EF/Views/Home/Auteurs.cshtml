@@ -1,0 +1,20 @@
+﻿@{
+
+    var MaListe = ViewBag.MaListeAuteur;
+    @* @MaListe *@
+
+    
+    foreach(var element_dictionnaire in MaListe )
+    {
+        var auteur = element_dictionnaire.Key;
+        var auteur_oeuvres = element_dictionnaire.Value;
+
+        <p>L'auteur est : @auteur</p>
+        <ul>
+        @foreach(var oeuvre in auteur_oeuvres)
+        {
+            <li>@oeuvre</li>
+        }
+        </ul>
+    }
+}

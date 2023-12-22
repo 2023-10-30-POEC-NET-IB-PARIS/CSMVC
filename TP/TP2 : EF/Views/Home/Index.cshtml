@@ -1,0 +1,22 @@
+@using WebApplication2.Models
+@model List<Auteur>
+@{
+	var auteurs = Model;
+}
+
+@foreach (var auteur in auteurs)
+{
+	@auteur.Prenom
+	@auteur.Nom
+
+	<br>
+	<ul>
+
+	@foreach (var titre in auteur.TitreOeuvres)
+	{
+		<li>
+		@titre
+		</li>
+	}
+	</ul>
+}
